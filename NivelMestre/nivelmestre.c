@@ -21,9 +21,9 @@ int main(){
     printf("Digite o estado da carta 1 (A-H):");
     scanf("%c", &estado);
     printf("Digite o codigo da carta 1 (ex: A01):");
-    scanf("%s", &codigo);
+    scanf("%s", codigo);
     printf("Digite o nome da cidade da carta 1:");
-    scanf("%s", &cidade);
+    scanf("%s", cidade);
     printf("Digite a população da cidade da carta 1:");
     scanf("%ld", &populacaoCarta1);
     printf("Digite a área da cidade da carta 1 (em km²):");
@@ -37,9 +37,9 @@ int main(){
     printf("Digite o estado da carta 2 (A-H):\n");
     scanf("%c", &estado);
     printf("Digite o codigo da carta 2 (ex: A01):");
-    scanf("%s", &codigo);
+    scanf("%s", codigo);
     printf("Digite o nome da cidade da carta 2:");
-    scanf("%s", &cidade);
+    scanf("%s", cidade);
     printf("Digite a população da cidade da carta 2:");
     scanf("%ld", &populacaoCarta2);
     printf("Digite a área da cidade da carta 2 (em km²):");
@@ -79,7 +79,7 @@ int main(){
      printf("PIB: %.2f\n", PIBCarta2);
      printf ("Pontos Turísticos: %d\n", pontosturisticosCartas2);
      printf("Dencidade Populacional: %.2f \n", dencidadepopulacionalCarta2);
-     printf("PIB per Capta: %.2f \n", PIBpercaptaCarta2);
+     printf("PIB per Capta: %.2f \n\n", PIBpercaptaCarta2);
 
     // Comparação de cartas
     
@@ -88,16 +88,19 @@ int main(){
     resultado = PIBCarta1 > PIBCarta2;
     resultado = pontosturisticosCarta1 > pontosturisticosCartas2;
     resultado = dencidadepopulacionalCarta1 > dencidadepopulacionalCarta2;
-    resultado = PIBpercaptaCarta1 > PIBpercaptaCarta2;
-    resultado = superPoderCarta1 > superPoderCarta2;
+    superPoderCarta1 = populacaoCarta1 + areaCarta1 + PIBCarta1 + pontosturisticosCarta1 + dencidadepopulacionalCarta1 + PIBpercaptaCarta1, resultado;
+    superPoderCarta2 = populacaoCarta2 + areaCarta2 + PIBCarta2 + pontosturisticosCartas2 + dencidadepopulacionalCarta2 +PIBpercaptaCarta2, resultado;
 
-    printf("População de carta 1 %ld e População de carta 2 %ld Qual é a maior População ?: %d\n", populacaoCarta1, populacaoCarta2, resultado);
-    printf(" Area de carta 1 %f e Area de carta 2 %f Qual é a Maior Area ?: %d\n", areaCarta1, areaCarta2, resultado);
-    printf(" PIB de carta 1 %f e PIB de carta2 %f Qual o maior PIB ?: %d\n", PIBCarta1, PIBCarta2, resultado);
-    printf(" Pontos turisticos de carta 1 %d e Pontos turisticos de carta 2 %d Qual tem mais Pontos Turisticos ?: %d\n", pontosturisticosCarta1, pontosturisticosCartas2, resultado);
-    printf(" Dencidade populacional de carta 1 %f e Dencidade populacional de carta 2 %f Qual é a maior Dencidade Populacional ?: %d\n", dencidadepopulacionalCarta1, dencidadepopulacionalCarta2, resultado);
-    printf(" PIB per capta de carta 1 %f e PIB per capta de carta 2 %f Qual o maior PIB Per Capta ?: %d\n", PIBpercaptaCarta1, PIBpercaptaCarta2, resultado);
-    printf(" Super poder de carta 1 %f e Super poder de carta 2 %f Qual o maior Super Poder ?: %d\n", superPoderCarta1, superPoderCarta2, resultado);
+    printf("População de carta 1 %ld e População de carta 2 %ld Qual é a maior População ?: %d\n\n", populacaoCarta1, populacaoCarta2, resultado);
+    printf(" Area de carta 1 %f e Area de carta 2 %f Qual é a Maior Area ?: %d\n\n", areaCarta1, areaCarta2, resultado);
+    printf(" PIB de carta 1 %f e PIB de carta2 %f Qual o maior PIB ?: %d\n\n", PIBCarta1, PIBCarta2, resultado);
+    printf(" Pontos turisticos de carta 1 %d e Pontos turisticos de carta 2 %d Qual tem mais Pontos Turisticos ?: %d\n\n", pontosturisticosCarta1, pontosturisticosCartas2, resultado);
+    printf(" Dencidade populacional de carta 1 %f e Dencidade populacional de carta 2 %f Qual é a maior Dencidade Populacional ?: %d\n\n", dencidadepopulacionalCarta1, dencidadepopulacionalCarta2, resultado);
+    printf(" PIB per capta de carta 1 %f e PIB per capta de carta 2 %f Qual o maior PIB Per Capta ?: %d\n\n", PIBpercaptaCarta1, PIBpercaptaCarta2, resultado);
+    printf(" Super poder de carta 1 %f e Super poder de carta 2 %f Qual o maior Super Poder ?: %d\n\n", superPoderCarta1, superPoderCarta2, resultado);
+    
+    
+
 
     return 0;
 }
