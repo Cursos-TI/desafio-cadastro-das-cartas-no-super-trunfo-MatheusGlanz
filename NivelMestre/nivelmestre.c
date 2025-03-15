@@ -19,7 +19,7 @@ int main(){
     
     //código carta 1
     printf("Digite o estado da carta 1 (A-H):");
-    scanf("%c", &estado);
+    scanf(" %c", &estado);
     printf("Digite o codigo da carta 1 (ex: A01):");
     scanf("%s", codigo);
     printf("Digite o nome da cidade da carta 1:");
@@ -35,7 +35,7 @@ int main(){
 
     //Código carta 2
     printf("Digite o estado da carta 2 (A-H):\n");
-    scanf("%c", &estado);
+    scanf(" %c", &estado);
     printf("Digite o codigo da carta 2 (ex: A01):");
     scanf("%s", codigo);
     printf("Digite o nome da cidade da carta 2:");
