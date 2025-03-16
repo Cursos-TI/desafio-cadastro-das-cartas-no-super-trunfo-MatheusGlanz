@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main() {
+    
     char estado;
     char codigo[3]; 
     char cidade[50];
@@ -10,6 +11,8 @@ int main() {
     int pontosturisticosCarta1, pontosturisticosCarta2;
     float densidadepopulacionalCarta1, densidadepopulacionalCarta2;
     float PIBpercaptaCarta1, PIBpercaptaCarta2;
+    float SuperPoderCarta1, SuperPoderCarta2;
+
 
     printf("\n *** PROGRAMA NIVEL NOVATO COMPARAÇÃO DE CARTAS ***\n");
    
@@ -53,6 +56,8 @@ int main() {
   
     densidadepopulacionalCarta1 = populacaoCarta1 / areaCarta1;
     PIBpercaptaCarta1 = PIBCarta1 / populacaoCarta1;
+    SuperPoderCarta1 = populacaoCarta1 + areaCarta1 + PIBCarta1 + pontosturisticosCarta1 + densidadepopulacionalCarta1 + PIBpercaptaCarta1;
+
 
     printf("\n*** DADOS DA CARTA 1 ***\n");
     printf("Código: %s\n", codigo); 
@@ -70,6 +75,8 @@ int main() {
 
     densidadepopulacionalCarta2 = populacaoCarta2 / areaCarta2;
     PIBpercaptaCarta2 = PIBCarta2 / populacaoCarta2;
+    SuperPoderCarta2 = populacaoCarta2 + areaCarta2 + PIBCarta2 + pontosturisticosCarta2 + densidadepopulacionalCarta2 + PIBpercaptaCarta2;
+
 
     printf("\n*** DADOS DA CARTA 2 ***\n");
     printf("Código: %s\n", codigo); 
@@ -120,7 +127,12 @@ int main() {
    }else{
     printf("A carta 2 tem um PIB per capta maior que a carta 1!\n"); 
    }
-
+   
+   if (SuperPoderCarta1 > SuperPoderCarta2){
+    printf("A carta 1 tem um super poder maior que a carta 2!\n");
+   }else{
+    printf("A carta 2 tem um super poder maior que a carta 1!\n");
+    }
 
 
 
